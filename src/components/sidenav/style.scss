@@ -1,0 +1,357 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%; 
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--light);
+  overflow-x: hidden;
+  padding: 20px 25px;
+  border-right: solid 1px var(--border);
+  box-shadow: 0px 4px 30px rgba(46, 113, 255, 0.06);
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  padding: 10px 20px;
+  font-weight: 500;
+  color:var(--neutral);
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.sidenav a:hover{
+  background-color: var(--neutral);
+  color: #ffffff;
+}
+
+.sidenav .nav-active {
+  background-color: #F0F5FF;
+  color: var(--primary);
+}
+
+
+.sidenav .accordion-button img {
+  margin-right: 20px;
+}
+.sidenav .accordion-button {
+  margin-right: 20px;
+}
+.sidenav .accordion-button span {
+  color:var(--dark)
+}
+.accordion-item {
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../../assets/icons/caret-up.svg')!important;
+    transform: rotate(-180deg);
+}
+.accordion-button::after {
+  background-image: url('../../assets/icons/caret-up.svg')!important;
+  margin-left: 126px;
+}
+.accordion-body{
+  border-left: solid 1px var(--border);
+  padding:0;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+ul {
+  list-style-type: none;
+  padding-left:0;
+  margin-left: 20px;
+}
+
+.main {
+  margin-left: 300px;
+  padding: 0px;
+  position: relative;
+}
+
+.ham-burger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  bottom: 0;
+  display: none;
+}
+
+.logo-container {
+  padding:20px 0px 30px;
+  border-bottom: solid 1px var(--border);
+  margin-bottom: 20px;
+}
+.get-started {
+  position: absolute;
+  bottom:30px;
+  left: 35px;
+  width:100%;
+}
+.get-started button {
+  position: relative;
+}
+// new
+.get-started-button {
+   position: relative;
+  width: 100%;
+  margin-top: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  button {
+    position: relative;
+    align-self: flex-end;
+  }
+}
+ .get-started-button .notification {
+  position: absolute;
+  // top: 0px;
+  right:0px;
+  bottom: 40px;
+  z-index: 2;
+  padding:1px 8px;
+  border-radius: 100%;
+  border:solid 1px var(--danger);
+  background-color: var(--danger);
+  color: #ffffff
+}
+.pop-up {
+  position: fixed;
+  bottom:100px;
+  z-index:200;
+  width: 500px;
+
+  left:10px;
+  
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+.pop-up.hidden {
+  display: none;
+}
+
+.pop-up .card {
+  border-color: transparent;
+  padding:0!important;
+  box-shadow: 0px 5px 83px rgba(2, 11, 30, 0.14);
+}
+.pop-up .information {
+  display: flex;
+  background: rgba(255, 255, 255, 0.09);
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  img {
+    margin-right: 20px;
+  }
+
+  p {
+    align-self: center;
+    margin-bottom: 0;
+    font-weight: 600!important;
+  }
+
+}
+.pop-up .card-top {
+  background-color: var(--dark);
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 30px;
+
+  h5 {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  p{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+    span{
+      color:var(--primary);
+      margin-right: 10px;
+    }
+  }
+  .hide-icon {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+  }
+}
+.progress {
+  border-radius: 0;
+  height: 0.5rem;
+   background-color: rgba(126, 152, 206, 0.32);
+  .bg-success {
+    background-color: var(--success);
+  }
+}
+.card-body{
+  .item.bg-secondary {
+      border-radius: 10px;
+      .normal-text {
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 0px
+    }
+    }
+  .item {
+    margin-bottom: 10px;
+    padding: 10px;
+    s {
+      color: var(--success);
+      font-weight: 700;
+      margin-bottom: 10px
+    }
+    img {
+      margin-right: 20px;
+      height: 24px;
+      width: 24px;
+      margin-top: 5px;
+    }
+    .small-text {
+      font-size: 14px;
+      color:var(--neutral);
+      margin-bottom:0;
+      font-weight: 300;
+    }
+    .normal-text {
+      color: var(--dark);
+      font-weight: 700;
+      margin-bottom: 0px
+    }
+  }
+}
+.get-started img {
+  margin-right: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  // .sidenav a {font-size: 18px;}
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+/* medium screens */
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  
+}
+/* large screens */
+@media screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  
+}
+/* exrtra small screens */
+@media screen and (max-width: 576px) {
+  .sidenav {
+  height: 100%;
+  width: 0%;
+  padding:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.1s;
+ 
+}
+  .sidenav.open {
+  height: 100%;
+  width: 100%;
+  padding: 20px 25px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  // transition: 0.2s;
+
+ 
+}
+.main {
+  width: 100%!important;
+  margin-left: 0;
+}
+.main.open {
+  width: 0;
+  margin-left: 0;
+  }
+
+  .pop-up {
+    bottom:80px;
+    left:5px;
+    width: 340px;
+    
+    .card-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card-body .item {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+  }
+  .ham-burger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  bottom: 0;
+  display: block;
+}
+.get-started-button {
+  width: 100%;
+  margin-top: 370px;
+}
+}
+/* Small screens */
+@media screen and (min-device-width: 576px) and (max-device-width: 767px) {
+ 
+}
+/* Wide screens */
+@media screen and (min-width: 1200px) {
+  
+}
