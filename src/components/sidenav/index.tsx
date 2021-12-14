@@ -49,17 +49,17 @@ const SideNav: React.FC<{children: ReactNode}> = ({ children }) => {
                   <li>
                     <NavLink
                       className={(navData) => (navData.isActive ? 'nav-active' : '')}
-                      to="/"
+                      to="/finvault-test"
                     >
                       Transactions
 
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/">Deposit into Finvault</NavLink>
+                    <NavLink to="/finvault-test">Deposit into Finvault</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/">Withdraw Funds</NavLink>
+                    <NavLink to="/finvault-test">Withdraw Funds</NavLink>
                   </li>
                 </ul>
               </div>
