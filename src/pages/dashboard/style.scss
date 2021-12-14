@@ -1,0 +1,94 @@
+.dashboard-wrapper {
+	background-color: #FBFCFF;
+	height: 100vh;
+}
+section {
+	padding: 0px 40px;
+
+	.card-inner-wrapper {
+		width: 40%;
+		img {
+			height: 56px;
+		}
+		.description p {
+			margin-bottom:5px;
+			margin-top:5px;
+			color: var(--neutral);
+			font-size: 12px;
+			font-weight: 600;
+		}
+		.description h4 {
+			color: var(--dark);
+			font-weight: 700;
+		}
+		.description {
+			margin-bottom: 20px;
+		}
+		.btn-primary {
+			margin-right: 10px;
+		}
+	}
+	.table{
+		margin-top: 10px;
+		thead th {
+		color: var(--neutral)!important;
+		font-weight: normal;
+		font-size: 14px;
+		}
+		tbody {
+			color:var(--dark);
+			font-size: 14px;
+			background-color: #ffffff;
+		}
+		.arrow-down {
+  			width: 0; 
+  			height: 0; 
+  			border-left: 4px solid transparent;
+  			border-right: 4px solid transparent;
+  			border-top: 4px solid var(--neutral);
+		}
+		.arrow-up {
+			width: 0; 
+			height: 0; 
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-bottom: 4px solid var(--neutral);
+			margin-bottom: 2px;
+			opacity: 0.6;
+		}
+		.arrow-up:hover {
+			opacity: 1;
+		}
+		.filters {
+			margin-top: 6px;
+			margin-left: 5px
+		}
+	}
+}
+
+
+/* medium screens */
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  
+}
+/* large screens */
+@media screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  
+}
+/* exrtra small screens */
+@media screen and (max-width: 576px) {
+  .card {
+	  margin-bottom: 20px;
+  }
+  section .card-inner-wrapper img {
+	margin-right: 20px;
+}
+}
+/* Small screens */
+@media screen and (min-device-width: 576px) and (max-device-width: 767px) {
+ 
+}
+/* Wide screens */
+@media screen and (min-width: 1200px) {
+  
+}
