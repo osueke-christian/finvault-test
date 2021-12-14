@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/finvault-test/static/css/main.77749711.chunk.css",
+    "main.js": "/finvault-test/static/js/main.ca99a083.chunk.js",
+    "main.js.map": "/finvault-test/static/js/main.ca99a083.chunk.js.map",
+    "runtime-main.js": "/finvault-test/static/js/runtime-main.9c60d213.js",
+    "runtime-main.js.map": "/finvault-test/static/js/runtime-main.9c60d213.js.map",
+    "static/js/2.981cdfd6.chunk.js": "/finvault-test/static/js/2.981cdfd6.chunk.js",
+    "static/js/2.981cdfd6.chunk.js.map": "/finvault-test/static/js/2.981cdfd6.chunk.js.map",
+    "static/js/3.0296b472.chunk.js": "/finvault-test/static/js/3.0296b472.chunk.js",
+    "static/js/3.0296b472.chunk.js.map": "/finvault-test/static/js/3.0296b472.chunk.js.map",
+    "index.html": "/finvault-test/index.html",
+    "static/css/main.77749711.chunk.css.map": "/finvault-test/static/css/main.77749711.chunk.css.map",
+    "static/js/2.981cdfd6.chunk.js.LICENSE.txt": "/finvault-test/static/js/2.981cdfd6.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/finvault-test/static/media/caret-up.febb411c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c60d213.js",
+    "static/js/2.981cdfd6.chunk.js",
+    "static/css/main.77749711.chunk.css",
+    "static/js/main.ca99a083.chunk.js"
+  ]
+}
