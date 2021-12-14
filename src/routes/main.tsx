@@ -12,7 +12,7 @@ const Routing = () => (
   <BrowserRouter>
     <SideNav>
       <Routes>
-        <Route index element={<Dashboard />} />
+        <Route path="/finvault-test" element={<Dashboard />} />
       </Routes>
     </SideNav>
   </BrowserRouter>
