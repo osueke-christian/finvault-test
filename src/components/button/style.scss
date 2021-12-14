@@ -1,0 +1,30 @@
+.round {
+	border-radius: 30px !important;
+}
+
+.btn-lg {
+	padding: 15px 30px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.non-button {
+	width:100px;
+	text-align: center;
+	padding:5px 5px;
+	font-size: 14px;
+}
+.non-button.success {
+	background-color: var(--success_bg)!important;
+	color: var(--success)!important;
+}
+
+.non-button.danger {
+	background-color: var(--danger_bg)!important;
+	color: var(--danger)!important;
+}
+
+.non-button.round{
+	border-radius: 20px !important;
+
+}
